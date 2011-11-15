@@ -25,11 +25,11 @@ require_once('page_controller.php');
 
     <div id="wrapper">
         <a class="asset-id" id="124821"></a>
-        <div id="header" <?php if($layout==1){ ?> class="landing slideshow" <?php } ?>>
-            <?php if($layout==1){ ?>
+        <div id="header" <?php if($layout==1 || $layout==2){ ?> class="landing <?php if($layout==1){ ?> slideshow<?php } ?>" <?php } ?>>
+            <?php if($layout==1 || $layout==2){ ?>
             <div class="slide" data-exposure="2" data-exposure-1="1" data-wipe="slide" data-wipetime="512">
                 <img src="content/img/header_landing.jpg" alt="" />
-                <div class="video" <!--data-vimeo-id="20552521"-->></div>
+                <div class="video" <?php if($layout==2){ ?> data-vimeo-id="10859897" <?php } ?>></div>
                 <div class="html">
                     <div class="black alpha quart-w pane right"><h2>html 1 <a href="#">LINK</a> html 1 html 1 html 1 html 1 html 1</h2></div>
                 </div>
