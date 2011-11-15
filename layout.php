@@ -55,7 +55,7 @@ require_once('page_controller.php');
             <?php } ?>
             <div class="header">
                 <a id="logo" href="#" title="Victoria and Albert Museum"><img src="css/vam/img/logo.gif" alt="Victoria and Albert Museum" /></a>
-                <form class="searchbar" action="/contentapi/search/">
+                <form class="searchbar" action="./test_ajax/">
                     <input type="text" name="q" id="query" value="" />
                     <input type="submit" name="search-submit" value="Go" />
                 </form>
