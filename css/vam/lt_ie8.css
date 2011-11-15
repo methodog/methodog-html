@@ -1,0 +1,72 @@
+/* Basics
+-------------------------------------------------------------- */
+
+/* emulate element:hover */
+body { behavior:url(http://www.vam.ac.uk/__data/assets/file/0006/149469/csshover.htc); } /* relative path from html */
+
+/* emulate input[type=] */
+input {
+    1:expression(this.executedExpressions ? void 0 : this.className += (this.type == 'checkbox' ? ' checkbox' : (this.type == 'radio' ? ' radio' : (this.type == 'submit' ? ' submit' : (this.type == 'reset' ? ' reset' : '')))));
+    2:expression(this.executedExpressions = true);
+} 
+input.checkbox, input.radio { border:0; width:auto!important; }
+input.submit, input.button, input.reset { background:#b5e6f7; border:0; color:#555; font-weight:bold; margin-right:0; padding:2px; width:auto!important; }
+input.submit:hover, input.submit:focus, input.submit:active, input.button:hover, input.button:focus, input.button:active, input.reset:hover, input.reset:focus, input.reset:active { background-color:#e4e4e4!important; }
+input.submit:active, input.button:active, input.reset:active { position:relative; top:1px; }
+
+.row { height:1%; }
+
+/* Specifics 
+-------------------------------------------------------------- */
+
+/* png transparency */
+#landing, #logo, .facebook, .flickr, .twitter, .share { behavior:url(http://www.vam.ac.uk/__data/assets/file/0007/149470/iepngfix.htc); } /* relative path from html */
+.header, .alpha { background:0!important; }
+
+.header { display:block!important; }
+#header, #page, .footer { width:960px; }
+#header, #header-nav li { display:block; float:left; }
+#header form { display:inline; }
+#logo, .header input { position:relative; z-index:1; }
+#head-info { position:absolute; right:10px; top:2em; }
+
+.subnav ul, .subnav .wide li, .subnav .pane, .promo .promocaption li, .split, .delicious, .facebook, .flickr, .twitter, .wikipedia { display:block; float:left; }
+.subnav ul { margin:0 3px 1em 6px; }
+#header-nav .tab { display:inline; }
+#header-nav .subnav { margin:0; }
+/* Mega menu tweaks */
+#header-nav .pane { width:12em; }
+#header-nav .wide { width:24em; }
+#header-nav .more { bottom:100.7em; clear:both; }
+#header-nav h6 { border-style:solid; }
+#header-nav ul { margin-bottom:2em; }
+#header-nav ul#login-links #login .pane { top:3em; }
+#header .slide .html { height:1%; }
+#header .slide .html .bottom-left, #header .slide .html .bottom-right { position:relative; top:12em; }
+#header .slide .html .bottom-right { float:right; }
+#footer-nav h6 { display:inline; line-height:2em; }
+
+.inline * { display:inline; }
+
+h1, h2, h3, h4 { position:relative; }
+h1 .right, h2 .right, h3 .right, h4 .right { float:none; position:absolute; right:1em; }
+
+#content ul.links li { height:1%; }
+ul.more li a { margin:0.8em 0; }
+
+.share { background-position:0 50%; padding:0 0 0 26px; }
+
+.promo .promocaption { height:auto!important; height:163px; }
+
+ul.tabs li { display:block; float:left; margin-left:0; }
+ul.tabs, #month-cal { height:1%; }
+/* Make sure header links aren't underlined */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:none; }
+/* Don't blow out the Home Page layout */
+.pane { padding:14px; }
+/* Mega menu making room for floats */
+#header-nav .subnav { width:655px; }
+/* Hide Search button text */
+form.searchbar input[type="submit"] { line-height:0; text-indent:-500px; }
+#mousetrap { background:#f9fdfe; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)"; filter:alpha(opacity=1); position:absolute; }
+#mousetrap.mask { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter:alpha(opacity=70); }

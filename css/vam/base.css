@@ -1,0 +1,48 @@
+html { height:100%; }
+body { color:#666; height:100%; margin-bottom:1px; }
+img { vertical-align:bottom; }
+p, fieldset, table, ol, ul, dl { margin-bottom:1em; }
+a { color:#666; text-decoration:underline; }
+a:hover, a:focus, a:active { color:#303030; }
+a:visited { color:#000; text-decoration:none; }
+a:visited:hover { text-decoration:underline; }
+h1, h2, h3, h4, h5, h6, strong, dt { font-weight:bold; margin:0 0 0.3em; }
+h1 { font-size:200%; }
+h2 { font-size:175%; }
+h3 { font-size:145%; line-height:1.18em; margin:0 0 0.7em; }
+h4 { font-size:116.6%; }
+h5 { font-size:108%; }
+h6 { color:#000; font-size:100%; }
+h2, h6 { font-weight:normal; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration:inherit; color:inherit }
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { text-decoration:inherit; color:inherit }
+h1 a:visited:hover, h2 a:visited:hover, h3 a:visited:hover, h4 a:visited:hover, h5 a:visited:hover, h6 a:visited:hover { text-decoration:inherit; color:#303030; }
+hr { background-color:transparent; border:dotted #e4e4e4; border-width:0 0 1px; clear:both; color:#fff; } 
+abbr, acronym { border-bottom:1px dotted #e4e4e4; } 
+em { font-style:italic; }
+small, sub, sup { font-size:85%; }
+sub, sup { position:relative; vertical-align:baseline; }
+sub { bottom:-0.3em; }
+sup { top:-0.3em; }
+blockquote { margin:1em; }
+ol, ul, dl { margin-left:2.2em; }
+ol, ul { list-style-position:outside; }
+ol { list-style-type:decimal; }
+ul { list-style-type:disc; }
+li { margin:0 0 0.5em; }
+dl dd { margin-left:1em; }
+th,td { border:1px dotted #e4e4e4; padding:0.5em; }
+th { font-weight:bold; text-align:center; vertical-align:middle; }
+caption { margin-bottom:0.5em; text-align:center; }
+label, input, select, textarea { margin:0 0.4em 0.4em 0; padding:0; vertical-align:middle; }
+input, select, textarea { border:1px solid #b1b1b1; padding:0; width:98%; }
+input { padding:2px 1px 1px 1px; }
+input:focus, select:focus, textarea:focus { background-color:#dbf2fc; }
+input[type=checkbox], input[type=radio] { border:0; width:auto!important; }
+input[type=submit], input[type=button], input[type=reset] { background:#b5e6f7; border:0; color:#555; cursor:pointer; font-weight:bold; margin-right:0; padding:2px; width:auto!important; }
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active, input[type=button]:hover, input[type=button]:focus, input[type=button]:active, input[type=reset]:hover, input[type=reset]:focus, input[type=reset]:active { background-color:#e4e4e4!important; }
+input[type=submit]:active, input[type=button]:active, input[type=reset]:active { position:relative; top:1px; }
+select { width:auto; }
+option { padding:0 0.6em 1px 1px; }
+textarea { height:8em; }
+audio { height:24px; width:100%; margin-bottom: 4px; }

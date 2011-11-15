@@ -1,0 +1,7 @@
+/* Print overrides
+-------------------------------------------------------------- */
+#top-links, #login-links, #header form, .nav, .footer { display:none; }
+
+#content a { font-size:90%; font-weight:bold; text-decoration:underline; }
+#content a:after { content:" (" attr(href) ") "; }
+#content a[href^="/"]:after { content:" (http://www.vam.ac.uk" attr(href) ") "; }

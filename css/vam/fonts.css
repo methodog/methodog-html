@@ -1,0 +1,11 @@
+body { font:12px/1.35 arial,helvetica,freesans,sans-serif; }
+
+select, input, button, textarea { font:108% arial,helvetica,freesans,sans-serif; }
+
+table { font-size:inherit; font:100%; }
+
+pre, code, kbd, samp, tt {
+    font-family:monospace;
+    *font-size:108%;
+    line-height:100%;
+}
