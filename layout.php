@@ -55,7 +55,7 @@ require_once('page_controller.php');
             <?php } ?>
             <div class="header">
                 <a id="logo" href="#" title="Victoria and Albert Museum"><img src="css/vam/img/logo.gif" alt="Victoria and Albert Museum" /></a>
-                <form class="searchbar" action="./test_ajax/">
+                <form class="searchbar" action="./test_ajax/autocomplete">
                     <input type="text" name="q" id="query" value="" />
                     <input type="submit" name="search-submit" value="Go" />
                 </form>
@@ -190,7 +190,7 @@ require_once('page_controller.php');
                     <li><a href="#">V&amp;A online shop</a></li>
                 </ul>
                 <ul id="login-links">
-                    <li id="login"><a href="/users/user">Your profile</a></li>
+                    <li id="login"><a href="./test_ajax/user/">Your profile</a></li>
                 </ul>
             </div>
 

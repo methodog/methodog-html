@@ -12,14 +12,14 @@ jQuery(document).ready(function() {
                     fl = '<form id="user-login"><label for="user-name">Username or e-mail</label><input id="user-name" name="name" tabindex="1" /><label for="user-pass">Password</label><input type="password" id="user-pass" name="pass" tabindex="2" /><input type="hidden" value="user_login" name="form_id" /><input type="submit" value="Login" name="op" tabindex="3" /><input type="button" class="right" id="register" value="Register" tabindex="4" /><ul class="errorlist"></ul></form>';
                 $('#login-links #login .pane').append($(fl));
                 $('#login-links #user-login').submit(function(){
-                    if( $('#login-links #user-login #user-name').val()==='' || $('#login-links #user-login #password').val()==='' ){
+                    if( $('#login-links #user-login #user-name').val()==='' || $('#login-links #user-login #user-pass').val()==='' ){
                         $('#login-links #user-login .errorlist').empty();
-                        $('#login-links #user-login .errorlist').append('<li>Please complete both fields to log in.</li><li class="more"><a href="'+url+'/password">Reset password?</a></li>');
+                        $('#login-links #user-login .errorlist').append('<li>Please complete both fields to log in.</li><li class="more"><a href="'+url+'user/password.php">Reset password?</a></li>');
                     }else{
                         $('#login-links #user-login .errorlist').html(spin);
                         $.ajax({
                             type:'POST',
-                            url:url,
+                            url:url+'index.php',
                             data:$(this).serialize(),
                             success:function(data){
                                 if(data.indexOf('not-logged-in')!==-1){
@@ -47,7 +47,7 @@ jQuery(document).ready(function() {
                             $('#login-links #user-register .errorlist').html(spin);
                             $.ajax({
                                 type:'POST',
-                                url:url+'/register',
+                                url:url+'register.php',
                                 data:$(this).serialize(),
                                 success:function(data){
                                     if(data.indexOf('messages error')!==-1){
@@ -154,7 +154,7 @@ jQuery(document).ready(function() {
             if( $(this).val().length > 1 ){
                 var contentapi = $(this).parent('form').attr('action');
                 contentapi = contentapi.replace(/\/?$/, '');
-                $.ajax({ url:contentapi+'/autocomplete/keyterms.php', data:$(this).serialize(), success:function(response, status){
+                $.ajax({ url:contentapi+'/keyterms.php', data:$(this).serialize(), success:function(response, status){
                         if( status==="success" && this.data.slice(this.data.indexOf('=')+1).replace(/\+/g,' ')===$('input#query').val() ){
                             $('#keyterm-menu').html(response);
                             $('#keyterm-menu ul').addClass('links');
@@ -163,7 +163,7 @@ jQuery(document).ready(function() {
                         if( $('#query-menu ul').children('li').length===0 ){ $('#query-menu').hide(); }
                     }
                 });
-                $.ajax({ url:contentapi+'/autocomplete/articles.php', data:$(this).serialize(), success:function(response, status){
+                $.ajax({ url:contentapi+'/articles.php', data:$(this).serialize(), success:function(response, status){
                         if( status==="success" && this.data.slice(this.data.indexOf('=')+1).replace(/\+/g,' ')===$('input#query').val() ){
                             $('#article-menu').html(response);
                             $('#article-menu ul').addClass('links');
