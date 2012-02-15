@@ -210,7 +210,7 @@ jQuery(document).ready(function() {
                 });
             }
         });
-        if( vid ){ $(this).addClass('video'); console.log('vid');}
+        if( vid ){ $(this).addClass('video'); }
         else if( $(this).find('.slide').length>1 ){ setInterval(function(){slideShow(ss);}, 1000); }
     });
     
