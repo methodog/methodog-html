@@ -29,7 +29,7 @@ require_once('page_controller.php');
             <?php if($layout==1 || $layout==2){ ?>
             <div class="slide" data-exposure="2" data-exposure-1="1" data-wipe="slide" data-wipetime="512">
                 <img src="content/img/header_landing.jpg" alt="" />
-                <div class="video" <?php if($layout==2){ ?> data-vimeo-id="10859897" <?php } ?>></div>
+                <div class="video" <?php if($layout==2){ ?> data-vimeo-id="17321546" <?php } ?>></div>
                 <div class="html">
                     <div class="black alpha quart-w pane right"><h2>html 1 <a href="#">LINK</a> html 1 html 1 html 1 html 1 html 1</h2></div>
                 </div>
