@@ -195,7 +195,7 @@ jQuery(document).ready(function() {
         $(this).data('t',0);
         var ss = this.id,
             vid;
-        $('.slide').each(function(i){
+        $(this).find('.slide').each(function(i){
             this.id = ss+'-slide-'+i;
             $(this).find('.video').eq(0).each(function(){
                 if( vid = $(this).data('vimeo-id') ){
