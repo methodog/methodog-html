@@ -25,37 +25,38 @@ require_once('page_controller.php');
 
     <div id="wrapper">
         <a class="asset-id" id="124821"></a>
-        <div id="header" <?php if($layout==1 || $layout==2){ ?> class="landing <?php if($layout==1){ ?> slideshow<?php } ?>" <?php } ?>>
-            <?php if($layout==1 || $layout==2){ ?>
-            <div class="slide" data-exposure="2" data-exposure-1="1" data-wipe="slide" data-wipetime="512">
+        <div id="header" <?php if($header>1){ ?> class="landing slideshow" <?php } ?>>
+            <?php if($header>1){ ?>
+            <div class="slide" data-exposure="4" data-exposure-1="3" data-wipe="wipe" data-wipetime="2000">
                 <img src="content/img/header_landing.jpg" alt="" />
-                <div class="video" <?php if($layout==2){ ?> data-vimeo-id="17321546" <?php } ?>></div>
+                <div class="video" data-vimeo-id="<?php if($header==4){ ?>17321546<?php } ?>"></div>
                 <div class="html">
                     <div class="black alpha quart-w pane right"><h2>html 1 <a href="#">LINK</a> html 1 html 1 html 1 html 1 html 1</h2></div>
                 </div>
             </div>
-            <div class="slide hide" data-exposure="2" data-exposure-1="1" data-wipe="fade" data-wipetime="">
+            <?php if($header==3){ ?>
+            <div class="slide hide" data-exposure="4" data-exposure-1="3" data-wipe="fade" data-wipetime="2000">
                 <div class="img" id="content/img/header_landing_2.jpg"></div>
                 <div class="html">
                     <div class="black alpha quart-w pane bottom-right"><h2>html 2 <a href="#">LINK</a> html 2 html 2 html 2 html 2 html 2</h2></div>
                 </div>
             </div>
-            <div class="slide hide" data-exposure="2" data-exposure-1="1" data-wipe="fade" data-wipetime="">
+            <div class="slide hide" data-exposure="4" data-exposure-1="3" data-wipe="fade" data-wipetime="2000">
                 <div class="img" id="content/img/header_landing_3.jpg"></div>
                 <div class="html">
                     <div class="black alpha quart-w pane bottom-left"><h2>html 3 <a href="#">LINK</a> html 3 html 3 html 3 html 3 html 3</h2></div>
                 </div>
             </div>
-            <div class="slide hide" data-exposure="2" data-exposure-1="1" data-wipe="fade" data-wipetime="">
+            <div class="slide hide" data-exposure="4" data-exposure-1="3" data-wipe="wipe" data-wipetime="2000">
                 <div class="img" id="content/img/header_landing_4.jpg"></div>
                 <div class="html">
                     <div class="black alpha quart-w pane right"><h2>html 4 <a href="#">LINK</a> html 4 html 4 html 4 html 4 html 4</h2></div>
                 </div>
             </div>
-            <?php } ?>
+            <?php } ?> <?php } ?>
             <div class="header">
                 <a id="logo" href="#" title="Victoria and Albert Museum"><img src="css/vam/img/logo.gif" alt="Victoria and Albert Museum" /></a>
-                <form class="searchbar" action="./test_ajax/autocomplete">
+                <form class="searchbar" action="/contentapi/search/">
                     <input type="text" name="q" id="query" value="" />
                     <input type="submit" name="search-submit" value="Go" />
                 </form>
@@ -67,7 +68,7 @@ require_once('page_controller.php');
                 </div>
             </div>
             <div id="landing">
-                <?php if($layout==1){ ?>
+                <?php if($header>1){ ?>
                 <h1><?php draw_page_title(); ?></h1>
                 <?php } ?>
             </div>
@@ -96,15 +97,16 @@ require_once('page_controller.php');
                                     <li><a href="?p=2">T2</a></li>
                                     <li><a href="?p=3">T6 Lightbox</a></li>
                                     <li><a href="?p=4">T9 Conservation</a></li>
-                                    <li><a href="#">Artists &amp; Designers</a></li>
+                                    <li><a href="?p=5">Subject hub</a></li>
+                                    <li><a href="?p=6">Article pg</a></li>
                                     <li><a href="#">Books</a></li>
                                     <li><a href="#">Ceramics</a></li>
                                     <li><a href="#">China</a></li>
                                     <li><a href="#">Glass</a></li>
                                     <li><a href="#">India</a></li>                        
                                     <li><a href="#">Metalwork</a></li>
-                                    <li><a href="#">South East Asia</a></li>
-                                    <li><a href="#">Theatre &amp; Performance</a></li>
+                                    <li><a href="#">South east asia</a></li>
+                                    <li><a href="#">Theatre &amp; performance</a></li>
                                 </ul>
                                 <div class="more">
                                     <a class="light" href="#">Search the collections</a>
@@ -190,7 +192,7 @@ require_once('page_controller.php');
                     <li><a href="#">V&amp;A online shop</a></li>
                 </ul>
                 <ul id="login-links">
-                    <li id="login"><a href="./test_ajax/user/">Your profile</a></li>
+                    <li id="login"><a href="/users/user">Your profile</a></li>
                 </ul>
             </div>
 
@@ -199,59 +201,28 @@ require_once('page_controller.php');
                 <div class="nav row subnav" id="footer-nav">
                     <div class="pane">
                         <h6>Visit Us</h6>
-                        <ul>
-                            <li><a href="#">Opening times</a></li>
-                            <li><a href="#">Getting Here</a></li>
-                            <li><a href="#">Booking &amp; tickets</a></li>
-                            <li><a href="#">Facilities &amp; Access</a></li>
-                            <li><a href="#">Gallery Closures</a></li>
-                        </ul>
+                        <ul><li><a href="#">Opening times</a></li><li><a href="#">Getting here</a></li><li><a href="#">Booking &amp; tickets</a></li><li><a href="#">Eating &amp; drinking</a></li><li><a href="#">Gallery closures</a></li><li><a href="#">Disability &amp; access</a></li></ul>
                     </div>
                     <div class="pane">
                         <h6>Exhibitions</h6>
-                        <ul>
-                            <li><a href="#">Opening times</a></li>
-                            <li><a href="#">Getting Here</a></li>
-                            <li><a href="#">Booking &amp; tickets</a></li>
-                            <li><a href="#">Facilities &amp; Access</a></li>
-                            <li><a href="#">Gallery Closures</a></li>
-                        </ul>
+                        <ul><li><a href="#">Current exhibitions</a></li><li><a href="#">Future exhibitions</a></li></ul>
                     </div>
                     <div class="pane">
                         <h6>Resources</h6>
-                        <ul>
-                            <li><a href="#">Opening times</a></li>
-                            <li><a href="#">Getting Here</a></li>
-                            <li><a href="#">Booking &amp; tickets</a></li>
-                            <li><a href="#">Facilities &amp; Access</a></li>
-                            <li><a href="#">Gallery Closures</a></li>
-                        </ul>
+                        <ul><li><a href="#">National Art Library</a></li><li><a href="#">Study rooms</a></li><li><a href="#">Education centre</a></li><li><a href="#">Collections</a></li><li><a href="#">Videos &amp; audios</a></li><li><a href="#">Services</a></li></ul>
                     </div>
                     <div class="pane">
-                        <h6>V&amp;A Elsewhere</h6>
-                        <ul>
-                            <li><a href="#">Opening times</a></li>
-                            <li><a href="#">Getting Here</a></li>
-                            <li><a href="#">Booking &amp; tickets</a></li>
-                            <li><a href="#">Facilities &amp; Access</a></li>
-                            <li><a href="#">Gallery Closures</a></li>
-                        </ul>
+                        <h6>National &amp; International</h6>
+                        <ul><li><a href="#">Touring exhibitions</a></li><li><a href="#">V&amp;A UK</a></li><li><a href="#">V&amp;A international</a></li><li><a href="#">Archive of Art and Design</a></li><li><a href="#">Museum of Childhood</a></li></ul>
                     </div>
                     <div class="pane">
                         <h6>About the V&amp;A</h6>
-                        <ul>
-                            <li><a href="#">Opening times</a></li>
-                            <li><a href="#">Getting Here</a></li>
-                            <li><a href="#">Booking &amp; tickets</a></li>
-                            <li><a href="#">Facilities &amp; Access</a></li>
-                            <li><a href="#">Gallery Closures</a></li>
-                        </ul>
+                        <ul><li><a href="#">FuturePlan</a></li><li><a href="#">Press</a></li><li><a href="#">Jobs</a></li><li><a href="#">Departments</a></li><li><a href="#">Conservation</a></li><li><a href="#">Venue hire</a></li></ul>
                     </div>
-                    <a href="#" class="light">More</a>
                 </div>
                 <div class="row more">
                     <a class="light search" href="#">Search the Collection</a>
-                    <a class="light log-in" href="/">Register for our E-newsletter</a>
+                    <a class="light" href="/">Register for our E-newsletter</a>
                 </div>
                 <div class="row" id="footer">
                     <ul class="flags">
