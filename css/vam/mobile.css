@@ -1,0 +1,43 @@
+@media screen and (max-width:640px) {
+    img, iframe, embed, object, video, canvas { height:auto; max-width:100%; } 
+    #wrapper, .header { width:100%; padding:0; }
+    #content>.col { width:100%; }
+    .col { min-width:33.29%!important; }
+    .slide, #header-nav, #head-info { display:none!important; }
+    #header #mobile-nav { display:block; }
+    #header { margin:6px 0 0; text-align:center; }
+    #header .header, #header .header #logo { background:0!important; border:0!important; color:#666!important; }
+    #header .header #logo img { margin:0 4px 0 0; visibility:visible!important; width:48px; }
+    #header #landing { background:0!important; color:#666!important; height:auto!important; text-align:left; width:auto; }
+    .header form.searchbar { position:relative; width:65%; }
+    .header input#query { background:0!important; float:left; font-size:1.4em; position:absolute; left:0; top:2px; width:85%; }
+    .subnav .pane { display:block; float:left; }
+    #footer-nav ul { width:8.8em!important; }
+    .half-w { width:49.83%!important; }
+    .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:90%; }
+    .pane>.figure img, .pane>.figure iframe, .pane>.figure embed, .pane>.figure object, .pane>.figure video, .pane>.figure canvas { max-width:95%; }
+    .aligned.figure { min-height:10.5em; }
+}
+@media screen and (max-width:320px) {
+    /* single col */
+    #header #mobile-nav li { width:50%; }
+    .header input#query { width:78%; }
+    .five-sixths-w, .three-quarts-w, .half-w, .thrd-w, .quart-w, .sixth-w, .two-thrds-w { width:100%!important; }
+    .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:94%; }
+    .row>.figure:not(.row)+.figure { border-left:0; border-top:1px dotted #ddd; }
+    .related-images { padding-left:3px; padding-right:3px; }
+}
+
+@media screen and (min-width:321px) and (max-width:640px), screen and (max-width:319px) {
+    .pane { padding:8px; }
+    .figure { padding:8px 0; }
+    .figure img, .figure object, .figure iframe, .figcaption { margin:0 0.32em 0 8px!important; }
+    .figure .left+.figcaption { margin:0.32em!important; }
+    .pane .figcaption .bottom-right { bottom:8px; }
+    .pane .figure.row { padding-bottom:8px; }
+}
+
+@media screen and (max-width:220px) {
+    .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { width:92%; }
+}
+

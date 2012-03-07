@@ -5,6 +5,7 @@ require_once('page_controller.php');
 <html lang="en" id="vam-ac-uk">
 <head>
     <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=0.3" name="viewport">
     <link rel="stylesheet" type="text/css" href="css/vam/reset.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/vam/fonts.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/vam/base.css" media="all" />
@@ -15,7 +16,8 @@ require_once('page_controller.php');
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="css/vam/jquery-ui-theme/jquery-ui-1.8.5.custom.css" media="all" />
     <?php if($theme) { ?><link rel="stylesheet" type="text/css" href="css/vam/theme/<?php echo $theme; ?>.css" media="all" /><?php } ?>
-    <link rel="stylesheet" type="text/css" href="css/vam/print.css" media="print, handheld" />
+    <?php if($p>1){ ?><link rel="stylesheet" type="text/css" href="css/vam/mobile.css" media="screen, projection, handheld" /><?php } ?>
+    <link rel="stylesheet" type="text/css" href="css/vam/print.css" media="print" />
     <link rel="shortcut icon" href="css/vam/img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="css/vam/img/favicon.ico" type="image/x-icon" />
     <title><?php draw_page_title(); ?> &mdash; Victoria and Albert Museum</title>
@@ -65,6 +67,11 @@ require_once('page_controller.php');
                     <h3>The world&rsquo;s leading Museum of Art and Design</h3>
                     <h4>Opening times</h4>
                     <p>10.00 to 17.45 Everyday<br />10.00 to 22.00 Fridays</p>
+                </div>
+                <div class="nav" id="mobile-nav">
+                    <ul>
+                        <li><a href="#">What's in</a></li><li><a href="#">Visit us</a></li><li><a href="#">What's on</a></li><li><a href="#">Collections</a></li>
+                    </ul>
                 </div>
             </div>
             <div id="landing">

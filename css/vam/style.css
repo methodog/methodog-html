@@ -1,6 +1,6 @@
 /* Template / Layout
 -------------------------------------------------------------- */
-#wrapper { width:960px; margin:0 auto; padding:3.5em 0 0; position:relative; }
+#wrapper { margin:0 auto; padding:3.5em 0 0; position:relative; width:960px; }
 #page { border:dotted #ddd; border-width:1px 1px 0; }
 
 .header { padding:21px 0 0; width:100%; position:relative; }
@@ -49,6 +49,10 @@
 #header #head-info * { display:block; line-height:1.6em; margin:0; }
 #header #head-info h1, #header #head-info h2 { font-weight:normal; font-size:1.75em; line-height:1.2em; }
 #header #head-info h3 { font-weight:normal; }
+#header #mobile-nav { display:none; }
+#header #mobile-nav ul { margin:6px auto; overflow:hidden; width:100%; }
+#header #mobile-nav li { float:left; margin:0; text-align:center; white-space:nowrap; width:25%; }
+#header #mobile-nav a { border:1px dotted #ddd; display:inline-block; font-size:1.2em; font-weight:800; padding:2px 0; text-decoration:none; width:100%; }
 #header #landing { display:none; }
 #header.landing .header { background:url(img/header_overlay.png) 0 0 repeat-y; border-bottom:1px dotted #bababa; color:#fff; }
 #header.landing.video .header { border-color:rgba(186,186,186,.3); }
@@ -290,7 +294,7 @@ input.date { background-image:url('img/datepicker.gif'); background-repeat:no-re
 .jcarousel-prev-disabled-horizontal, .jcarousel-next-disabled-horizontal { background:none; cursor:default; }
 
 .overlay { background:#fff; border:1px solid #666; display:none; margin:0 auto; min-height:200px; padding:15px; z-index:1; }
-.zoom { background-color:#fafafa; border:1px dotted #ddd; height:400px; margin:0 0 10px; position:relative; }
+.zoom { background-color:#fafafa; border:1px dotted #ddd; height:400px; margin:0 0 10px; position:relative; width:100%; }
 .zoom+.jcarousel-container { border-top:1px dotted #ddd; padding-top:5px; }
 .overlay a.close { float:right; margin:0 0 0.5em 1em; }
 .overlay .prev, .overlay .next, .zoom .prev, .zoom .next { background:transparent url(img/icons-lightbox.png) no-repeat -15px 50%; cursor:pointer; display:none; height:100%; width:15px; position:absolute; top:0; }
