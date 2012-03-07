@@ -77,7 +77,7 @@
 .col { float:left; margin-bottom:-10000px; padding-bottom:10000px; overflow:hidden; }
 .clearfix { clear:both; font-size:0!important; height:0!important; overflow:hidden; visibility:hidden; }
 .clear { clear:both; }
-a[name] { position:absolute; }
+a[name] { position:relative; }
 
 .full-w { width:100%; }
 .half-w { width:49.92%; }
