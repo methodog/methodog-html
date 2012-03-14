@@ -32,6 +32,8 @@
     .pane>.figure img, .pane>.figure iframe, .pane>.figure embed, .pane>.figure object, .pane>.figure video, .pane>.figure canvas { max-width:95%; }
     .aligned.figure { min-height:10.5em; }
     #visit-us-layout>.col { width:100%; }
+    .input-menu { font-size:1.2em; margin-left:-30px; }
+    .input-menu li { margin:1em 0; }
 }
 @media screen and (max-width:320px) {
     /* single col */
