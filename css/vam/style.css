@@ -190,7 +190,7 @@ span.split { border-left:1px dotted #ddd; display:inline-block; height:2.5em; ma
 .pane .figcaption .bottom-right { bottom:15px; right:0; }
 .pane .figure { padding-bottom:0; }
 .pane .figure.row { padding-bottom:15px; }
-.pane .figure.row:first-child { padding-top:0; }
+.pane .figure.row:first-child, h1+.figure { padding-top:0; }
 .pane .figure img, .pane>.figure .figcaption { margin-left:0!important; }
 .pane .figure.right img, .pane .figure.right .figcaption { margin-left:15px!important; }
 .aligned.figure { min-height:13em; padding-bottom:2.9em; position:relative; }
@@ -326,8 +326,7 @@ h3+h4 { margin-top:-0.6em; }
 .pane>h3 { margin-top:0.2em; }
 h2+.pane, h3+.pane, h4+.pane, h5+.pane, h6+.pane, h2+.figure, h3+.figure, h4+.figure, h5+.figure, h6+.figure { margin-top:-15px; }
 .text h1~.figure .figcaption, .text h2~.figure .figcaption, .text h3~.figure .figcaption, .text p~.figure .figcaption { font-size:0.85em; }
-#content.row .two-thrds-w.col:first-child .row:first-child .figure.half-w:nth-child(-n+2) { padding-top:20px; }
-#content.row .two-thrds-w.col:first-child h1:first-child { margin-top:-0.2em; }
+#content.row>.two-thrds-w.col:first-child>.list>.row:first-child .figure.half-w:nth-child(-n+2) { padding-top:20px; }
 .row:not(.pane) .row:not(.pane) { padding-bottom:15px; }
 .row:not(.pane) .row:not(.pane)+.row:not(.pane):not(.figure) { padding-bottom:0; }
 .row:not(.pane):not(.figure):not(#content)>*:first-child:not(.pane):not(.figure):not(.col), .row:not(.page-header)+*:not(.row):not(.pane):not(.figure):not(.list):not(.nav):not(.stripe) { margin-top:15px; }
