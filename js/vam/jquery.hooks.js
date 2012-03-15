@@ -154,7 +154,7 @@ jQuery(document).ready(function() {
             if( $(this).val().length > 1 ){
                 var contentapi = $(this).parent('form').attr('action');
                 contentapi = contentapi.replace(/\/?$/, '');
-                $.ajax({ url:contentapi+'/keyterms.php', data:$(this).serialize(), success:function(response, status){
+                $.ajax({ url:contentapi+'/autocomplete/keyterms.php', data:$(this).serialize(), success:function(response, status){
                         if( status==="success" && this.data.slice(this.data.indexOf('=')+1).replace(/\+/g,' ')===$('input#query').val() ){
                             $('#keyterm-menu').html(response);
                             $('#keyterm-menu ul').addClass('links');
@@ -163,7 +163,7 @@ jQuery(document).ready(function() {
                         if( $('#query-menu ul').children('li').length===0 ){ $('#query-menu').hide(); }
                     }
                 });
-                $.ajax({ url:contentapi+'/articles.php', data:$(this).serialize(), success:function(response, status){
+                $.ajax({ url:contentapi+'/autocomplete/articles.php', data:$(this).serialize(), success:function(response, status){
                         if( status==="success" && this.data.slice(this.data.indexOf('=')+1).replace(/\+/g,' ')===$('input#query').val() ){
                             $('#article-menu').html(response);
                             $('#article-menu ul').addClass('links');
