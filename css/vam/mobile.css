@@ -30,10 +30,12 @@
     .sixth-w, .two-thrds-w, .three-quarts-w, .five-sixths-w { min-width:33.29%!important; }
     .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:90%; }
     .pane>.figure img, .pane>.figure iframe, .pane>.figure embed, .pane>.figure object, .pane>.figure video, .pane>.figure canvas { max-width:95%; }
-    .aligned.figure { min-height:10.5em; }
     #visit-us-layout>.col { width:100%; }
     .input-menu { font-size:1.2em; margin-left:-30px; }
     .input-menu li { margin:1em 0; }
+    .aligned.figure { min-height:10.5em; }
+    #content>.col:last-child.thrd-w .figure img { float:left; }
+    #content>.col:last-child.thrd-w h3+.figure, #content>.col:last-child.thrd-w h4+.figure, #content>.col:last-child.thrd-w h5+.figure, #content>.col:last-child.thrd-w h6+.figure { margin-top:-8px; }
 }
 @media screen and (max-width:320px) {
     /* single col */
