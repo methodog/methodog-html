@@ -100,12 +100,14 @@ require_once('page_controller.php');
                             <div class="pane">
                                 <h6>Subject</h6>
                                 <ul>
-                                    <li><a href="?p=1">T1</a></li>
-                                    <li><a href="?p=2">T2</a></li>
-                                    <li><a href="?p=3">T6 Lightbox</a></li>
-                                    <li><a href="?p=4">T9 Conservation</a></li>
+                                    <li><a href="?p=1">Home pg</a></li>
                                     <li><a href="?p=5">Subject hub</a></li>
                                     <li><a href="?p=6">Article pg</a></li>
+                                    <li><a href="?p=4">Journal pg</a></li>
+                                    <li><a href="?p=7">Visit Us</a></li>
+                                    <li><a href="?p=3">T6 Lightbox</a></li>
+                                    <li><a href="?p=2">T2</a></li>
+                                    <li><a href="#"></a></li>
                                     <li><a href="#">Books</a></li>
                                     <li><a href="#">Ceramics</a></li>
                                     <li><a href="#">China</a></li>

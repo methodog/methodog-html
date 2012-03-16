@@ -2,12 +2,13 @@
 $p = !empty($_GET['p']) ? (int) $_GET['p'] : 1;
 
 $pages = array(
-    1 => array('title'=>'T1', 'layout'=>'1', 'header'=>'3', 'content_area'=>'1-col_content.html')
+    1 => array('title'=>'Home pg', 'layout'=>'1', 'header'=>'3', 'content_area'=>'1-col_content.html')
     ,2 => array('title'=>'T2', 'layout'=>'2', 'header'=>'1', 'content_area'=>'2-col_content.html', 'content_area_2'=>'2-col_sidebar.html')
     ,3 => array('title'=>'T6', 'layout'=>'1', 'header'=>'4', 'content_area'=>'t6-lightbox_content.html')
-    ,4 => array('title'=>'T9', 'layout'=>'3', 'header'=>'1', 'theme'=>'forest', 'content_area'=>'t9_content.html', 'content_area_2'=>'t9_sidebar.html', 'content_area_3'=>'t9_topbar.html')
+    ,4 => array('title'=>'Journal pg', 'layout'=>'3', 'header'=>'1', 'theme'=>'forest', 'content_area'=>'t9_content.html', 'content_area_2'=>'t9_sidebar.html', 'content_area_3'=>'t9_topbar.html')
     ,5 => array('title'=>'Subject hub', 'layout'=>'2', 'header'=>'2', 'content_area'=>'subject_content.html', 'content_area_2'=>'subject_sidebar.html')
     ,6 => array('title'=>'Article pg', 'layout'=>'2', 'header'=>'1', 'content_area'=>'article_content.html', 'content_area_2'=>'article_sidebar.html')
+    ,7 => array('title'=>'Visit Us', 'layout'=>'1', 'header'=>'1', 'content_area'=>'opening-times_content.html')
 );
 
 $header = get_page_header();
