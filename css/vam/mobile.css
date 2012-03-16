@@ -37,20 +37,24 @@
     #content>.col:last-child.thrd-w h3+.figure, #content>.col:last-child.thrd-w h4+.figure, #content>.col:last-child.thrd-w h5+.figure, #content>.col:last-child.thrd-w h6+.figure { margin-top:-8px; }
     #visit-us-layout>.col { width:100%; }
     #visit-us-layout img { display:none; }
-    #visit-us-layout>.two-thrds-w.col .pane { padding:0; }
-    #visit-us-layout ul.links { margin:10px 0; }
-    #visit-us-layout ul.links>li { background:0; float:left; margin:0; padding:0!important; text-align:center; width:25%; }
-    #visit-us-layout ul.links>li>a { border:1px dotted #ddd; display:inline-block; font-size:1.2em; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
+    #visit-us-layout>.two-thrds-w.col .row, #visit-us-layout>.two-thrds-w.col .col, #visit-us-layout>.two-thrds-w.col .pane { border:0; display:block; float:none; margin:0; padding:0; width:100%!important; }
+    #visit-us-layout>.two-thrds-w.col ul.links { margin:10px 0; }
+    #visit-us-layout>.two-thrds-w.col ul.links>li { background:0; float:left; margin:0; padding:0!important; text-align:center; width:25%; }
+    #visit-us-layout>.two-thrds-w.col ul.links>li>a { border:1px dotted #ddd; display:inline-block; font-size:1.2em; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
+    #visit-us-layout>.two-thrds-w.col .page-listing .row { clear:none; float:left; width:50%!important; }
+    #visit-us-layout>.two-thrds-w.col .page-listing h3 { background-color:#b7e5fa; border:1px dotted #5aa0c1; margin:0; }
+    #visit-us-layout>.two-thrds-w.col .page-listing h3>a { background:url(img/bullet.gif) 0.7em 50% no-repeat; display:block; padding:11px 0 9px 1.4em; width:100%;  }
 }
 @media screen and (max-width:320px) {
     /* single col */
     h1 { font-size:1.65em; line-height:1.25em; }
     .header input#query { width:78%; }
-    #mobile-nav>ul>li, #visit-us-layout ul.links>li { width:50%; }
+    #mobile-nav>ul>li, #visit-us-layout>.two-thrds-w.col ul.links>li { width:50%; }
     .five-sixths-w, .three-quarts-w, .half-w, .thrd-w, .quart-w, .sixth-w, .two-thrds-w { width:100%!important; }
     .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:94%; }
     .list .row>.figure:not(.row)+.figure { border-left:0; border-top:1px dotted #ddd; }
     .related-images { padding-left:3px; padding-right:3px; }
+    #visit-us-layout>.two-thrds-w.col .page-listing .row { width:100%!important; }
 }
 @media screen and (min-width:321px) and (max-width:640px), screen and (max-width:319px) {
     .pane { padding:8px; }
