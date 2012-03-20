@@ -23,7 +23,7 @@
     #footer>ul { float:none!important; margin:0; }
     #footer>.flags>li { margin:0 1%; }
     #footer>#foot-links>li { display:inline-block; }
-    #page { border:0; }
+    #page { border-width:1px 0; }
     .input-menu { font-size:1.2em; margin-left:-30px; }
     .input-menu li { margin:1em 0; }
     .page-header>form>select { font-size:1.35em; margin:10px 0; text-align:right; }
@@ -33,6 +33,12 @@
     .sixth-w, .two-thrds-w, .three-quarts-w, .five-sixths-w { min-width:33.29%!important; }
     .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:90%; }
     .pane>.figure img, .pane>.figure iframe, .pane>.figure embed, .pane>.figure object, .pane>.figure video, .pane>.figure canvas { max-width:95%; }
+    .pane { padding:8px; }
+    .figure { padding:8px 0!important; }
+    .figure img, .figure object, .figure iframe, .figcaption { margin:0 0.32em 0 8px!important; }
+    .figure .left+.figcaption { margin:0.32em!important; }
+    .pane .figcaption .bottom-right { bottom:8px; }
+    .pane .figure.row { padding-bottom:8px; }
     .aligned.figure { min-height:10.5em; }
     #content>.col:last-child.thrd-w h3+.figure, #content>.col:last-child.thrd-w h4+.figure, #content>.col:last-child.thrd-w h5+.figure, #content>.col:last-child.thrd-w h6+.figure { margin-top:-8px; }
     #visit-us-layout>.col { width:100%; }
@@ -55,14 +61,6 @@
     .list .row>.figure:not(.row)+.figure { border-left:0; border-top:1px dotted #ddd; }
     .related-images { padding-left:3px; padding-right:3px; }
     #visit-us-layout>.two-thrds-w.col .page-listing .row { width:100%!important; }
-}
-@media screen and (min-width:321px) and (max-width:640px), screen and (max-width:319px) {
-    .pane { padding:8px; }
-    .figure { padding:8px 0; }
-    .figure img, .figure object, .figure iframe, .figcaption { margin:0 0.32em 0 8px!important; }
-    .figure .left+.figcaption { margin:0.32em!important; }
-    .pane .figcaption .bottom-right { bottom:8px; }
-    .pane .figure.row { padding-bottom:8px; }
 }
 @media screen and (max-width:220px) {
     #footer-nav>.pane>ul>li { width:100%!important; }

@@ -184,11 +184,10 @@ span.split { border-left:1px dotted #ddd; display:inline-block; height:2.5em; ma
 .figure.row, .row>.figure { display:block; float:none; }
 .figure.half-w, .figure.thrd-w, .figure.quart-w { display:inline-block; float:left; }
 .figure.row { width:100%; }
-.figure img, .figure object, .figure iframe, .figcaption { margin:0 0.6em 0 15px!important; }
+.figure img, .figure video, .figure object, .figure iframe, .figcaption { margin:0 0.6em 0 15px!important; }
 .pane .figure .figcaption { margin:0!important; }
 .figure .left+.figcaption { margin:0.6em!important; }
-.figure img, .figure object, .figure iframe { padding:0 0.5em 0.6em 0; }
-.figure img { padding-top:3px; }
+.figure img, .figure video, .figure object, .figure iframe { padding:3px 0.5em 0.6em 0; }
 .figure .left img, .figure img.left { padding-bottom:0; }
 .figure .more { float:right; }
 .pane .figcaption .bottom-right { bottom:15px; right:0; }
@@ -318,7 +317,7 @@ ul.tabs li { border:dotted #ddd; border-width:0 1px; display:inline-block; margi
 ul.tabs a { color:#999!important; display:inline-block; font-weight:800; font-size:1.2em; padding:0.4em 1.4em; text-decoration:none!important; }
 ul.tabs a:hover, ul.tabs a:focus, ul.tabs a:active, ul.tabs li.active a, ul.tabs li.active { background:#fff; border-bottom:1px solid #fff; color:#555!important; }
 
-#area3-morebar a.more { background-image:none!important; clear:both; display:block; font-size:1.8em; text-align:center; width:100%; }
+#area3-morebar a.more { background-image:none!important; clear:both; display:block; font-size:1.8em; text-align:center; }
 
 /* Cases 
 -------------------------------------------------------------- */
