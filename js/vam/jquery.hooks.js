@@ -438,7 +438,7 @@ jQuery(document).ready(function() {
     
     /* Replace equal height cols method (OTL) for hashed urls */
     if( window.location.hash.length ){ replaceOTLMethod(); }
-    $('a[href^="#"]').bind('mousedown',replaceOTLMethod());
+    $('a[href^="#"]').bind('mousedown',replaceOTLMethod);
     function replaceOTLMethod(){
         $('#content, #content>.col').css({'overflow':'visible'});
         $('#content').append('<div class="clearfix"/>');
