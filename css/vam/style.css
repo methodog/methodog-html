@@ -112,7 +112,7 @@ a[name] { position:relative; }
 .inline>* { display:inline-block; }
 .hide { display:none!important; }
 
-.handheld { display:none; }
+.mobile { display:none; }
 
 /* Content
 -------------------------------------------------------------- */
