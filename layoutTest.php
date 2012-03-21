@@ -271,7 +271,7 @@ require_once('page_controller.php');
                     </ul>
                 </div>
                 <div class="mobile-off row centre">
-                    <a class="light" href="javascript:void(0)">Standard site layout</a>
+                    <a class="light" href="javascript:return">Standard site layout</a>
                 </div>
             </div>
         
