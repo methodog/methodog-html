@@ -78,6 +78,9 @@
 #foot-links a:hover, #foot-links a:focus, #foot-links a:active, #my-nav a:hover, #my-nav a:focus, #my-nav a:active { color:#303030; text-decoration:underline; }
 #content { border:0; margin:0 0 15px; }
 
+.mobile, .mobile-off { display:none; }
+.mobile-off { background-color:#b7e5fa; border:1px dotted #5aa0c1; font-weight:800; }
+
 .row { border-bottom:1px dotted #ddd; clear:both; overflow:hidden; }
 .col { float:left; margin-bottom:-10000px; padding-bottom:10000px; overflow:hidden; }
 .clearfix { clear:both; font-size:0!important; height:0!important; overflow:hidden; visibility:hidden; }
@@ -111,8 +114,6 @@ a[name] { position:relative; }
 .centre { text-align:center; }
 .inline>* { display:inline-block; }
 .hide { display:none!important; }
-
-.mobile { display:none; }
 
 /* Content
 -------------------------------------------------------------- */

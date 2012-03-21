@@ -252,8 +252,8 @@ require_once('page_controller.php');
                         <li><a class="light" href="#">A-Z Listing</a></li>
                     </ul>
                 </div>
-                <div class="row" id="my-nav">
-                    <a class="go" href="#">My Album</a>
+                <div class="mobile-off row centre">
+                    <a class="light" href="javascript:void(0)">Standard site layout</a>
                 </div>
             </div>
         

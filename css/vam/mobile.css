@@ -1,5 +1,5 @@
 @media screen and (max-width:640px) {
-    .mobile { display:block; }
+    .mobile, .mobile-off { display:block; }
     img, iframe, embed, object, video, canvas { height:auto; max-width:100%; }
     #wrapper, .header { width:100%; padding:0; }
     #content>.col { border:0; margin-bottom:0; padding-bottom:0; width:100%; }

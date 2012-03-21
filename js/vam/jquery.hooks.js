@@ -1,5 +1,18 @@
 jQuery(document).ready(function() {
     
+    $('link[href*="mobile.css"]').each(function(){
+        if( $.cookie('mobile-style-off') ){
+            $('meta[name^="viewport"]').remove();
+            $(this).remove();
+            $('.mobile-off').show().children('a').text('Mobile site layout').show();
+        }
+    });
+    $('.mobile-off>a').click(function(){
+        if( $.cookie('mobile-style-off') ) $.cookie('mobile-style-off',null);
+        else $.cookie('mobile-style-off',1);
+        window.location.reload();
+    });
+    
     $('#header-nav>ul>li>a').each(function(i){ $(this).attr('tabindex',i+8); });
     
     $('#login-links #login>a:visible').each(function(){
