@@ -334,7 +334,9 @@ jQuery(document).ready(function() {
                 }
                 h = pup.height();
                 t = (h<$(window).height() ? (($(window).height()-h)/2)-15:0) + $(window).scrollTop();
-                pup.css({'width':w+'px','left':(($(window).width()-w)/2)-15,'top':t+'px'});
+                l = (($(window).width()-w)/2)-15;
+                l = l>0 ? l:0;
+                pup.css({'width':w+'px','left':l+'px','top':t+'px'});
             }
         });
         return false;
