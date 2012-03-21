@@ -58,6 +58,7 @@
     #mobile-nav>ul>li, #visit-us-layout>.two-thrds-w.col ul.links>li { width:50%; }
     .five-sixths-w, .three-quarts-w, .half-w, .thrd-w, .quart-w, .sixth-w, .two-thrds-w { width:100%!important; }
     .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:94%; }
+    .pane .figure.right img, .pane .figure.right .figcaption { margin-left:0!important; }
     .list .row>.figure:not(.row)+.figure { border-left:0; border-top:1px dotted #ddd; }
     .related-images { padding-left:3px; padding-right:3px; }
     #visit-us-layout>.two-thrds-w.col .page-listing .row { width:100%!important; }
