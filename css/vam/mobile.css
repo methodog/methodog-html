@@ -48,7 +48,7 @@
     #visit-us-layout>.two-thrds-w.col ul.links>li { background:0; float:left; margin:0; padding:0!important; text-align:center; width:25%; }
     #visit-us-layout>.two-thrds-w.col ul.links>li>a { border:1px dotted #ddd; display:inline-block; font-size:1.2em; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
     #visit-us-layout>.two-thrds-w.col .page-listing .row { clear:none; float:left; width:50%!important; }
-    #visit-us-layout>.two-thrds-w.col .page-listing h3 { background-color:#b7e5fa; border:1px dotted #5aa0c1; margin:0; }
+    #visit-us-layout>.two-thrds-w.col .page-listing h3 { background-color:#b7e5fa; border:1px dotted #fff; margin:0; }
     #visit-us-layout>.two-thrds-w.col .page-listing h3>a { background:url(img/bullet.gif) 0.7em 50% no-repeat; display:block; padding:11px 0 9px 1.4em; width:100%;  }
 }
 @media screen and (max-width:320px) {

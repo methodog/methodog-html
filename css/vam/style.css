@@ -79,7 +79,7 @@
 #content { border:0; margin:0 0 15px; }
 
 .mobile, .mobile-off { display:none; }
-.mobile-off { background-color:#b7e5fa; border:1px dotted #5aa0c1; font-weight:800; }
+.mobile-off { background-color:#b7e5fa; border:1px dotted #9ad9f6; font-weight:800; }
 
 .row { border-bottom:1px dotted #ddd; clear:both; overflow:hidden; }
 .col { float:left; margin-bottom:-10000px; padding-bottom:10000px; overflow:hidden; }

@@ -28,9 +28,9 @@ require_once('page_controller.php');
         @media screen and (max-width:320px) {
             #mobile-nav>.tab { display:block; }
             #mobile-nav>ul { display:none; }
-            #mobile-nav>ul, #mobile-nav>.tab { background-color:#b7e5fa; box-shadow:inset 0 4px 1.5em #5aa0c1; padding:11px 0 9px; }
+            #mobile-nav>ul, #mobile-nav>.tab { background-color:#b7e5fa; border:1px dotted #ddd; box-shadow:inset 0 -0.5em 1.5em #9ad9f6; padding:11px 0 9px; }
             #mobile-nav>ul>li { width:86%; }
-            #mobile-nav>ul>li>a { background:#fff; border-width:1px; border-style:solid; border-radius:2em 2em 2em 2em; box-shadow:inset 0 -0.7em 0.7em #ddd; margin:0 0 4px; padding:0.5em 0; }
+            #mobile-nav>ul>li>a { background:#fff; border-width:1px; border-style:solid; border-radius:5px 5px 5px 5px; box-shadow:inset 0 -0.5em 0.7em #eee; margin:0 0 4px; padding:0.5em 0; }
             #mobile-nav>.tab:active, #mobile-nav>.tab:hover, #mobile-nav>.tab:focus, #mobile-nav>ul>li>a:active, #mobile-nav>ul>li>a:hover, #mobile-nav>ul>li>a:focus { position:relative; top:1px; }
         }
     </style>
