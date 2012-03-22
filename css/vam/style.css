@@ -58,10 +58,6 @@
 #header.landing.slideshow #landing { background:0; }
 #header .slide .html { margin:12.5em 15px 15px; }
 #header .slide .btn { position:absolute; bottom:0; }
-#mobile-nav { display:none; margin:10px 0 0; }
-#mobile-nav>ul { overflow:hidden; width:100%; }
-#mobile-nav>ul>li { margin:0; text-align:center; white-space:nowrap; width:25%; }
-#mobile-nav>ul>li>a { border:1px dotted #ddd; display:inline-block; font-size:1.2em; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
 #footer-nav ul { width:15em!important; }
 #footer-nav ul { width:15em!important; }
 #footer-nav .pane { padding:0.4em; vertical-align:top; }

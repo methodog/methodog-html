@@ -19,7 +19,7 @@ require_once('page_controller.php');
     <?php if($theme) { ?><link rel="stylesheet" type="text/css" href="css/vam/theme/<?php echo $theme; ?>.css" media="all" /><?php } ?>
     <?php if($p>1){ ?><link rel="stylesheet" type="text/css" href="css/vam/mobile.css" media="screen, projection, handheld" /><?php } ?>
     <style type="text/css">
-        /* rel url! *//* merge in with #mobile-nav>ul>li>a */ #mobile-nav>.tab { background:url(css/vam/img/arrow-big-d_dk.png) 97% 50% no-repeat; font-size:1.4em; font-weight:800; text-align:left; text-decoration:none; width:100%; }
+        /* rel url! *//* merge in with #mobile-nav>ul>li>a */ #mobile-nav>.tab { background:url(css/vam/img/arrow-big-d_dk.png) 97% 50% no-repeat; font-weight:800; text-align:left; text-decoration:none; width:100%; }
         /* rel url! */ #mobile-nav>.tab>span { background:url(css/vam/img/bullet.gif) 0.7em 50% no-repeat; display:inline-block; padding:0 0 0 1.4em; }
         @media screen and (min-width:321px) and (max-width:640px) {
             #mobile-nav>.tab { display:none; }
@@ -85,7 +85,7 @@ require_once('page_controller.php');
                     <h4>Opening times</h4>
                     <p>10.00 to 17.45 Everyday<br />10.00 to 22.00 Fridays</p>
                 </div>
-                <div class="nav" id="mobile-nav">
+                <div class="nav mobile" id="mobile-nav">
                     <a class="tab"><span class="more">Sections</span></a>
                     <ul>
                         <li><a href="#">What's in</a></li><li><a href="#">Visit us</a></li><li><a href="#">What's on</a></li><li><a href="#">Collections</a></li><li><a href="#">More</a></li><li><a href="#">More</a></li>

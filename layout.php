@@ -68,7 +68,7 @@ require_once('page_controller.php');
                     <h4>Opening times</h4>
                     <p>10.00 to 17.45 Everyday<br />10.00 to 22.00 Fridays</p>
                 </div>
-                <div class="nav" id="mobile-nav">
+                <div class="nav mobile" id="mobile-nav">
                     <ul>
                         <li><a href="#">What's in</a></li><li><a href="#">Visit us</a></li><li><a href="#">What's on</a></li><li><a href="#">Collections</a></li>
                     </ul>

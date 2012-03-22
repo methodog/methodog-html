@@ -1,4 +1,6 @@
 @media screen and (max-width:640px) {
+    body { font-size:16px; }
+    h1, h2, h3, h4, h5, h6 { font-size:1em!important; font-weight:800; }
     .mobile, .mobile-off { display:block; }
     img, iframe, embed, object, video, canvas { height:auto; max-width:100%; }
     #wrapper, .header { width:100%; padding:0; }
@@ -9,13 +11,17 @@
     #header .header #logo img { margin:0 4px 0 0; visibility:visible!important; width:48px; }
     #header #landing { background:0!important; color:#666!important; height:auto!important; padding:0.75em 8px 0.3em!important; text-align:left; width:auto; }
     .header form.searchbar { position:relative; width:65%; }
-    .header input#query { background:0!important; float:left; font-size:1.4em; position:absolute; left:0; top:2px; width:85%; }
+    .header form.searchbar input { font-size:1em; }
+    .header input#query { background:0!important; float:left; position:absolute; left:0; top:2px; width:85%; }
     .subnav .pane { display:block; float:left; }
-    #mobile-nav { display:block; }
-    .footer>.row, #footer>ul { font-size:1.34em; padding:8px 0; }
+    #mobile-nav { margin:10px 0 0; }
+    #mobile-nav>ul { overflow:hidden; width:100%; }
+    #mobile-nav>ul>li { margin:0; text-align:center; white-space:nowrap; width:25%; }
+    #mobile-nav>ul>li>a { border:1px dotted #ddd; display:inline-block; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
+    .footer>.row, #footer>ul { padding:8px 0; }
     #footer-nav { padding:0; }
     #footer-nav>.pane, #footer-nav>.pane>h6, #footer-nav>.pane>ul, #footer-nav>.pane>ul>li, #footer-nav>.pane>ul>li>a { background:0; display:inline-block; font-weight:800; margin:0; padding:0!important; text-align:center; width:100%!important; }
-    #footer-nav>.pane>h6, #footer-nav>.pane>ul>li>a { border:1px dotted #ddd; padding:6px 0!important; text-decoration:none; width:100%; }
+    #footer-nav>.pane>h6, #footer-nav>.pane>ul>li>a { border:1px dotted #ddd; padding:0.5em 0!important; text-decoration:none; width:100%; }
     #footer-nav>.pane>h6 { background:#ddd; }
     #footer-nav>.pane>ul { text-align:left; }
     #footer-nav>.pane>ul>li { width:50%!important; }
@@ -24,9 +30,9 @@
     #footer>.flags>li { margin:0 1%; }
     #footer>#foot-links>li { display:inline-block; }
     #page { border-width:1px 0; }
-    .input-menu { font-size:1.2em; margin-left:-30px; }
+    .input-menu { margin-left:-30px; }
     .input-menu li { margin:1em 0; }
-    .page-header>form>select { font-size:1.35em; margin:10px 0; text-align:right; }
+    .page-header>form>select { margin:10px 0; text-align:right; }
     .page-header>form>select>option { margin:1em 0; padding-right:1em!important; }
     .half-w { width:49.83%!important; }
     .quart-w { width:24.6%!important; }
@@ -46,14 +52,13 @@
     #visit-us-layout>.two-thrds-w.col .row, #visit-us-layout>.two-thrds-w.col .col, #visit-us-layout>.two-thrds-w.col .pane { border:0; display:block; float:none; margin:0; padding:0; width:100%!important; }
     #visit-us-layout>.two-thrds-w.col ul.links { margin:10px 0; }
     #visit-us-layout>.two-thrds-w.col ul.links>li { background:0; float:left; margin:0; padding:0!important; text-align:center; width:25%; }
-    #visit-us-layout>.two-thrds-w.col ul.links>li>a { border:1px dotted #ddd; display:inline-block; font-size:1.2em; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
+    #visit-us-layout>.two-thrds-w.col ul.links>li>a { border:1px dotted #ddd; display:inline-block; font-weight:800; padding:6px 0; text-decoration:none; width:100%; }
     #visit-us-layout>.two-thrds-w.col .page-listing .row { clear:none; float:left; width:50%!important; }
     #visit-us-layout>.two-thrds-w.col .page-listing h3 { background-color:#b7e5fa; border:1px dotted #fff; margin:0; }
     #visit-us-layout>.two-thrds-w.col .page-listing h3>a { background:url(img/bullet.gif) 0.7em 50% no-repeat; display:block; padding:11px 0 9px 1.4em; width:100%;  }
 }
 @media screen and (max-width:320px) {
     /* single col */
-    h1 { font-size:1.65em; line-height:1.25em; }
     .header input#query { width:78%; }
     #mobile-nav>ul>li, #visit-us-layout>.two-thrds-w.col ul.links>li { width:50%; }
     .five-sixths-w, .three-quarts-w, .half-w, .thrd-w, .quart-w, .sixth-w, .two-thrds-w { width:100%!important; }
