@@ -1,6 +1,7 @@
 @media screen and (max-width:640px) {
     body { font-size:16px; }
     h1, h2, h3, h4, h5, h6 { font-size:1.1em!important; font-weight:800; }
+    option { margin:1em 0; }
     .mobile, .mobile-off { display:block; }
     img, iframe, embed, object, video, canvas { height:auto; max-width:100%; }
     #wrapper, .header { width:100%; padding:0; }
@@ -33,7 +34,6 @@
     .input-menu { margin-left:-30px; }
     .input-menu li { margin:1em 0; }
     .page-header>form>select { margin:10px 0; text-align:right; }
-    .page-header>form>select>option { margin:1em 0; padding-right:1em!important; }
     .half-w { width:49.83%!important; }
     .quart-w { width:24.6%!important; }
     .sixth-w, .two-thrds-w, .three-quarts-w, .five-sixths-w { min-width:33.29%!important; }
