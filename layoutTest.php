@@ -285,10 +285,9 @@ require_once('page_controller.php');
 <script type="text/javascript" src="js/vam/jquery.tools.overlay.js"></script>
 <script type="text/javascript" src="js/vam/jquery.jcarousel.min.js"></script>
 <script type="text/javascript" src="js/vam/jquery.cookie.min.js"></script>
-<script type="text/javascript" src="js/vam/jquery.touchwipe.min.js"></script>
 <script type="text/javascript" src="js/vam/jquery.hooks.js"></script>
 <script type="text/javascript">
-    $('#mobile-nav>.tab').click(function(){ $('#mobile-nav>ul').slideToggle(); }).touchwipe({ wipeDown:function(){ $('#mobile-nav>ul').slideToggle(); }, preventDefaultEvents:true });
+    $('#mobile-nav>.tab').click(function(){ $('#mobile-nav>ul').slideToggle(); });
 </script>
 <script type="text/javascript" src="js/vam/html5media/html5media.min.js"></script>
 <script type="text/javascript" src="js/vam/global.js"></script>
