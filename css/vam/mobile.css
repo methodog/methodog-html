@@ -1,6 +1,6 @@
 @media screen and (max-width:640px) {
     body { font-size:16px; }
-    h1, h2, h3, h4, h5, h6 { font-size:1em!important; font-weight:800; }
+    h1, h2, h3, h4, h5, h6 { font-size:1.1em!important; font-weight:800; }
     .mobile, .mobile-off { display:block; }
     img, iframe, embed, object, video, canvas { height:auto; max-width:100%; }
     #wrapper, .header { width:100%; padding:0; }
@@ -40,7 +40,7 @@
     .figure img, .figure iframe, .figure embed, .figure object, .figure video, .figure canvas { max-width:90%; }
     .pane>.figure img, .pane>.figure iframe, .pane>.figure embed, .pane>.figure object, .pane>.figure video, .pane>.figure canvas { max-width:95%; }
     .pane { padding:8px; }
-    .figure { padding:8px 0!important; }
+    .figure { padding:8px 0; padding-top:8px!important; }
     .figure img, .figure object, .figure iframe, .figcaption { margin:0 0.32em 0 8px!important; }
     .figure .left+.figcaption { margin:0.32em!important; }
     .pane .figcaption .bottom-right { bottom:8px; }
