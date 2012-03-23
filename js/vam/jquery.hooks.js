@@ -318,42 +318,44 @@ jQuery(document).ready(function() {
     });
 
     /* popup */
-    $('body').append('<div class="overlay" id="popup"></div>');
-    $('a[rel=pop]').attr('rel','#popup');
-    $('a[rel=#popup]').live('click',function(e){
-        e.preventDefault();
-        $(this).overlay({
-            fixed:0, top:'center', load:true, closeOnClick:false,
-            onBeforeLoad:function(){
-                var pip = this.getTrigger(), pup = this.getOverlay(), zoom = 0, c = pip.parents('.carousel'), a = pip.parent();
-                if( pip.get(0).popContent instanceof Function ){ var popContent = pip.get(0).popContent(), img = popContent.img, html = popContent.html; }
-                else{ var img = pip.attr('href'), html = '', zoom = 1; }
-                pup.html('<img src="'+img+'" alt="" />'+html+'<div class="clearfix"/>');
-                if( !zoom && c.length>0 ){
-                    pup.prepend($('<div class="prev"/>').click(function(){ a = a.prev().length==1 ? a.prev() : c.find('li').last(); a.find('a').click(); c.jcarousel('scroll',a.index()); }));
-                    pup.prepend($('<div class="next"/>').click(function(){ a = a.next().length==1 ? a.next() : c.find('li').first(); a.find('a').click(); c.jcarousel('scroll',a.index()); }));
+    if( $('#wrapper').width()>=960 ){
+        $('body').append('<div class="overlay" id="popup"></div>');
+        $('a[rel=pop]').attr('rel','#popup');
+        $('a[rel=#popup]').live('click',function(e){
+            e.preventDefault();
+            $(this).overlay({
+                fixed:0, top:'center', load:true, closeOnClick:false,
+                onBeforeLoad:function(){
+                    var pip = this.getTrigger(), pup = this.getOverlay(), zoom = 0, c = pip.parents('.carousel'), a = pip.parent();
+                    if( pip.get(0).popContent instanceof Function ){ var popContent = pip.get(0).popContent(), img = popContent.img, html = popContent.html; }
+                    else{ var img = pip.attr('href'), html = '', zoom = 1; }
+                    pup.html('<img src="'+img+'" alt="" />'+html+'<div class="clearfix"/>');
+                    if( !zoom && c.length>0 ){
+                        pup.prepend($('<div class="prev"/>').click(function(){ a = a.prev().length==1 ? a.prev() : c.find('li').last(); a.find('a').click(); c.jcarousel('scroll',a.index()); }));
+                        pup.prepend($('<div class="next"/>').click(function(){ a = a.next().length==1 ? a.next() : c.find('li').first(); a.find('a').click(); c.jcarousel('scroll',a.index()); }));
+                    }
+                    pup.prepend($('<a class="close btn" href="javascript:void(0)">Close</a>').click(function(){ pip.overlay().close(); $('#mousetrap').remove(); }));
+                    pup.removeClass('html');
+                    pup.mouseTrap({'mask':1});
+                },
+                onLoad:function(){
+                    var pip = this.getTrigger(), pup = this.getOverlay(), w, h, t;
+                    if( pip.attr('data-popsize') ){
+                        w = pip.attr('data-popsize');
+                        pup.addClass('html');
+                    }else{
+                        w = pup.find('img').width();
+                    }
+                    h = pup.height();
+                    t = (h<$(window).height() ? (($(window).height()-h)/2)-15:0) + $(window).scrollTop();
+                    l = (($(window).width()-w)/2)-15;
+                    l = l>0 ? l:0;
+                    pup.css({'width':w+'px','left':l+'px','top':t+'px'});
                 }
-                pup.prepend($('<a class="close btn" href="javascript:void(0)">Close</a>').click(function(){ pip.overlay().close(); $('#mousetrap').remove(); }));
-                pup.removeClass('html');
-                pup.mouseTrap({'mask':1});
-            },
-            onLoad:function(){
-                var pip = this.getTrigger(), pup = this.getOverlay(), w, h, t;
-                if( pip.attr('data-popsize') ){
-                    w = pip.attr('data-popsize');
-                    pup.addClass('html');
-                }else{
-                    w = pup.find('img').width();
-                }
-                h = pup.height();
-                t = (h<$(window).height() ? (($(window).height()-h)/2)-15:0) + $(window).scrollTop();
-                l = (($(window).width()-w)/2)-15;
-                l = l>0 ? l:0;
-                pup.css({'width':w+'px','left':l+'px','top':t+'px'});
-            }
+            });
+            return false;
         });
-        return false;
-    });
+    }
     
     $("ul.related-list li.more a").click(function(e){
         e.preventDefault();
