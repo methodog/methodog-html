@@ -477,7 +477,7 @@ jQuery(document).ready(function() {
                 var obj = $(this);
                 if( opt.positionMe ){ obj.css({'position':'relative'}); }
                 $('#mousetrap').remove();
-                obj.before($('<div id="mousetrap" class="'+(opt.mask?'mask':'')+'"/>').css({'height':$(window).height(),'width':$(window).width()}).click(function(){ $(opt.close).hide(); $('#mousetrap').remove(); }));
+                obj.before($('<div id="mousetrap" class="'+(opt.mask?'mask':'')+'"/>').height($(document).height()).width($(document).width()).click(function(){ $(opt.close).hide(); $('#mousetrap').remove(); }));
                 obj.click(function(){ if( $(opt.close).is(':hidden') ){ $('#mousetrap').remove(); } });
             });
         }
