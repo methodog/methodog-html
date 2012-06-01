@@ -18,8 +18,7 @@ require_once('page_controller.php');
     <?php if($theme) { ?><link rel="stylesheet" type="text/css" href="css/vam/theme/<?php echo $theme; ?>.css" media="all" /><?php } ?>
     <?php if($p>1){ ?><link rel="stylesheet" type="text/css" href="css/vam/mobile.css" media="screen, projection, handheld" /><?php } ?>
     <link rel="stylesheet" type="text/css" href="css/vam/print.css" media="print" />
-    <link rel="shortcut icon" href="css/vam/img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="css/vam/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="css/vam/img/favicon.ico" />
     <title><?php draw_page_title(); ?> &mdash; Victoria and Albert Museum</title>
 </head>
 
